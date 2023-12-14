@@ -14,7 +14,7 @@
 <body>
     
     <div id="app">
-        <ul>
+        <ul v-if="mailArray.length >= 10">
             <li v-for="(mail, i) in mailArray" :key="i">{{mail}}</li>
         </ul>
 
